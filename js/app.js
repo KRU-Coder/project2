@@ -1,0 +1,46 @@
+$('.featured-scroll-inner').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+$('.all-products').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+$(window).scroll(function(){
+    if($(window).scrollTop()>150){
+        $(".to-top").show();
+    }
+    else{
+        $(".to-top").hide();
+    }
+})
